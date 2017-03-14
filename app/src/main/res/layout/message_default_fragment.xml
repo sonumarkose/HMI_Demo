@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <!-- android:background="@drawable/message_msgmin"-->
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+ <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/message_smsicon"
+        android:id="@+id/imageView"
+     android:layout_alignParentTop="true"
+     android:layout_alignParentStart="true"
+     android:layout_marginTop="12dp" />
+
+ <TextView
+     android:text="0"
+     android:textStyle="bold"
+     android:textColor="#E7BEB7"
+     android:layout_width="50dp"
+     android:layout_height="30dp"
+     android:id="@+id/msgCount_txt"
+     android:layout_alignBottom="@+id/imageView"
+     android:layout_toEndOf="@+id/imageView" />
+
+ <TextView
+     android:text="TextView"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:id="@+id/model_name"
+     android:textColor="#B2BEB7"
+     android:layout_below="@+id/imageView"
+     android:layout_alignEnd="@+id/msgCount_txt" />
+
+ <TextView
+     android:text="Messaging"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:paddingLeft="10dp"
+     android:textSize="15dp"
+     android:textStyle="bold"
+     android:textColor="#B2BEB5"
+     android:id="@+id/textView"
+     android:layout_above="@+id/msgCount_txt"
+     android:layout_toEndOf="@+id/imageView" />
+
+ <TextView
+     android:text="New Messages"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:id="@+id/NewMessages"
+     android:textStyle="bold|italic"
+     android:paddingLeft="3dp"
+     android:textColor="#E7BEB7"
+     android:layout_marginStart="17dp"
+     android:layout_alignBaseline="@+id/msgCount_txt"
+     android:layout_alignBottom="@+id/msgCount_txt"
+     android:layout_toEndOf="@+id/imageView" />
+
+</RelativeLayout>

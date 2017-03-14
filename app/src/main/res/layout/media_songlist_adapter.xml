@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    card_view:cardCornerRadius="2dp"
+    card_view:contentPadding="10dp"
+    card_view:cardUseCompatPadding="true"
+    android:layout_margin="5dp">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/albumart"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/media_headphone" />
+    <TextView
+        android:id="@+id/songtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="Medium Text"
+        android:textColor="@android:color/holo_orange_light"
+        android:paddingLeft="5dp"
+        android:paddingTop="22dp"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:layout_toRightOf="@+id/albumart" />
+    <TextView
+        android:id="@+id/songtrack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textStyle="italic"
+        android:text="Medium Text"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="10sp"
+        android:layout_below="@+id/songtitle"
+        android:layout_toRightOf="@+id/albumart"/>
+    <TextView
+        android:id="@+id/songDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textAlignment="center"
+        android:text="00.00"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="15sp"
+        android:layout_below="@+id/songtitle"
+        android:layout_alignParentEnd="true"
+        android:gravity="end"/>
+
+
+</RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
+
+
+

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent">-->
+
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/mapFullScreenContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--<LinearLayout
+                android:id="@+id/container_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/toolbar"
+                    layout="@layout/toolbar" />
+            </LinearLayout>-->
+        <!--    <fragment
+                android:id="@+id/place_autocomplete_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+                />-->
+
+            <FrameLayout
+                android:id="@+id/map_container"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            app:layout_anchor="@id/map_container"
+            app:layout_anchorGravity="right|bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            app:fabSize="normal"
+            android:src="@android:drawable/ic_menu_search" />
+        <!--<include layout="@layout/fab_layout"
+
+            />-->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_my_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|left"
+        android:layout_margin="@dimen/fab_margin"
+        app:layout_anchor="@id/map_container"
+        app:layout_anchorGravity="start|left|top"
+        app:fabSize="normal"
+        android:src="@drawable/ic_my_location" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:visibility="gone"
+        android:id="@+id/fab_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:layout_anchor="@id/map_container"
+        app:layout_anchorGravity="bottom|left|end"
+        app:fabSize="normal"
+        android:src="@drawable/ic_keyboard_arrow_left" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+<!--<fragment
+    android:id="@+id/fragment_navigation_drawer"
+    android:name="com.example.test.googlemapsactivity.activity.MapsDrawerFragment"
+    android:layout_width="@dimen/nav_drawer_width"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    app:layout="@layout/fragment_navigation_drawer"
+    tools:layout="@layout/fragment_navigation_drawer" />-->
+<!--<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    card_view:cardCornerRadius="4dp">-->
+
+<!--</android.support.v7.widget.CardView>-->
+
+
+
+<!--</LinearLayout>-->

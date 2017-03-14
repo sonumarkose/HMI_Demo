@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/climate_fan_background"
+    >
+    <TextView android:id="@+id/text_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/heading_fan"
+        android:textColor="@color/blue"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="10dp"
+        android:text="Off"
+        android:clickable = "false"
+        android:background="@drawable/ic_fan_off"
+        android:id="@+id/btnOff"/>
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/btnMax"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="280dp"
+        android:text="Max"
+        android:background="@drawable/ic_fan_max"
+        />
+
+    <Button
+        android:id="@+id/btn_level1"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_marginLeft="70dp"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:background="@drawable/climate_fan_button_deselected"
+        android:shadowColor="@color/ash"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_marginTop="100dp"
+        />
+
+    <Button
+        android:id="@+id/btn_level2"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_width="30dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/climate_fan_button_deselected"
+        android:shadowColor="@color/ash"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        />
+
+    <Button
+        android:id="@+id/btn_level3"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_width="30dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/climate_fan_button_deselected"
+        android:shadowColor="@color/ash"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        />
+
+    <Button
+        android:id="@+id/btn_level4"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_width="30dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/climate_fan_button_deselected"
+        android:shadowColor="@color/ash"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        />
+
+    <Button
+        android:id="@+id/btn_level5"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_width="30dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/climate_fan_button_deselected"
+        android:shadowColor="@color/ash"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        />
+
+</RelativeLayout>
+

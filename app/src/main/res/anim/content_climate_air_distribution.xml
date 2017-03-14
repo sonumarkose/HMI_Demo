@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <TextView android:id="@+id/text_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/heading_air"
+        android:textColor="@color/blue"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <LinearLayout android:id="@+id/pie"
+        android:layout_width="80dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/chart_container"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:paddingRight="35dp"
+            android:paddingLeft="-170dp"
+            android:paddingBottom="50dp"
+            android:layout_alignBaseline="@+id/image_view_fan"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true">
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView android:id="@+id/image_view_seat"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_seat"
+        android:layout_alignRight="@id/pie"
+        android:paddingTop="20dp"
+        android:paddingLeft="80dp"
+        android:layout_centerInParent="true"/>
+
+    <ImageView android:id="@+id/image_view_fan"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_fan"
+        android:layout_centerInParent="true"
+        android:layout_alignLeft="@id/pie"
+        />
+
+    <TextView android:id="@+id/txt_defrost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/image_view_seat"
+        android:layout_below="@id/text_heading"
+        android:textSize="15sp"
+        android:textColor="@color/colorAccent"
+        android:text="@string/Defrost"/>
+
+    <TextView android:id="@+id/txt_ventilation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/image_view_seat"
+        android:layout_below="@id/txt_defrost"
+        android:textSize="15sp"
+        android:textColor="@color/colorAccent"
+        android:text="@string/Ventilation"/>
+
+    <TextView android:id="@+id/txt_floor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/image_view_seat"
+        android:layout_below="@id/txt_ventilation"
+        android:textSize="15sp"
+        android:textColor="@color/colorAccent"
+        android:text="@string/Floor"/>
+
+
+
+</RelativeLayout>

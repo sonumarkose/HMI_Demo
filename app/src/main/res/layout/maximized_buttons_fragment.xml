@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:id="@+id/top"
+    >
+    <fragment
+        android:layout_height="120dp"
+        android:layout_width="match_parent"
+        class="com.example.quest.hmi_demo.phone.fragments.MaximizedFragment"
+        android:id="@+id/fragment_head"/>
+
+    <RelativeLayout
+        android:layout_width="130dp"
+        android:layout_height="310dp"
+        android:layout_below="@+id/fragment_head"
+        android:layout_alignParentLeft="true"
+        >
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="60dp"
+            android:id="@+id/btn_contacts"
+            android:background="@drawable/gradient"
+            android:text="Contacts"
+            android:textColor="@android:color/white"
+            android:onClick="contacts"
+            />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:background="@drawable/gradient"
+            android:textColor="@android:color/white"
+            android:text="Recents"
+            android:id="@+id/btn_recents"
+            android:layout_below="@+id/btn_contacts"
+            android:onClick="recents"/>
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:text="Keypad"
+            android:background="@drawable/gradient"
+            android:textColor="@android:color/white"
+            android:id="@+id/btn_keypad"
+            android:layout_below="@+id/btn_recents"
+            android:onClick="keypad"
+            />
+
+    </RelativeLayout>
+
+<!--    <fragment
+        android:layout_marginTop="120dp"
+        android:layout_height="310dp"
+        android:layout_marginLeft="130dp"
+        android:layout_width="match_parent"
+        class="com.example.quest.hmi_demo.phone.fragments.FavoriteFragment"
+        android:id="@+id/fragment_down_right"
+        />-->
+
+</RelativeLayout>
+
+
+
+

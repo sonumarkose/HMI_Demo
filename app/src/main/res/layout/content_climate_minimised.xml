@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_main"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/climate_button_selector"
+    android:gravity="center">
+
+    <ImageView android:id="@+id/image_view_seat"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/ic_seat"
+        android:layout_alignTop="@+id/image_view_ventilation"
+        android:layout_toRightOf="@+id/image_view_floor"
+        android:layout_toEndOf="@+id/image_view_floor" />
+
+    <ImageView android:id="@+id/image_view_fan"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_fan"
+        android:layout_centerInParent="true" />
+
+    <ImageView android:id="@+id/image_view_defrost"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/ic_defrost"
+        android:layout_above="@+id/image_view_seat"
+        android:layout_toLeftOf="@+id/image_view_seat"
+        android:layout_toStartOf="@+id/image_view_seat" />
+
+    <ImageView android:id="@+id/image_view_ventilation"
+        android:layout_width="20dp"
+        android:layout_height="10dp"
+        android:background="@drawable/ic_ventilation"
+        android:layout_above="@+id/image_view_floor"
+        android:layout_toRightOf="@+id/image_view_floor"
+        android:layout_toEndOf="@+id/image_view_floor"
+        android:layout_centerInParent="true"/>
+
+    <ImageView android:id="@+id/image_view_floor"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/ic_floor"
+        android:layout_below="@+id/image_view_fan"
+        android:layout_toRightOf="@+id/image_view_fan"
+        android:layout_toEndOf="@+id/image_view_fan"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
+
+</FrameLayout>
+
+

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/phoneimage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/phone1"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/phoneimage"
+            android:id="@+id/phonetext"
+            android:text="Phone"
+            android:textAllCaps="false"
+            android:textColor="#B2BEB5"
+            android:padding="5dp"
+            android:textSize="18dp"
+            android:layout_marginLeft="18dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/phonetext"
+            android:layout_marginLeft="100dp"
+            android:text="device"
+            android:textColor="#B2BEB5"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:id="@+id/device"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/provider"
+            android:textColor="#BF94E4"
+            android:text="provider"
+            android:layout_below="@+id/phonetext"
+            android:layout_marginLeft="190dp"
+            android:layout_toRightOf="@+id/phoneimage"
+           />
+        <!-- android:padding="15dp"
+         android:layout_alignBaseline="@+id/phonetext"
+         android:layout_toRightOf="@+id/phoneimage"-->
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/battery"
+            android:src="@drawable/battery"
+            android:layout_below="@+id/provider"
+            android:layout_marginLeft="250dp"
+            android:gravity="center_vertical"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/batterytxt"
+            android:text="45%"
+            android:textColor="#BF94E4"
+            android:layout_below="@+id/device"
+            android:layout_toRightOf="@+id/battery"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="3dp"
+            />
+        <!--<FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:id="@+id/phoneframe"
+            android:text="I am Phone"></FrameLayout>-->
+
+    </RelativeLayout>
+
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginBottom="100dp"
+        android:text="device"
+        android:id="@+id/device" />-->
+
+
+
+
+</LinearLayout>

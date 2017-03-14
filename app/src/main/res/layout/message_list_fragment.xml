@@ -1,0 +1,57 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/msgList_layout"
+    >
+
+    <!-- A RecyclerView with some commonly used attributes -->
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/cardview_default_radius"
+        android:scrollbars="vertical"
+        android:background="@color/black"
+        android:layout_below="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="12dp"
+        android:elevation="2dp"
+        android:src="@drawable/message_msgnew"
+        android:layout_marginEnd="12dp"
+        android:layout_above="@+id/my_recycler_view"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Messages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#B2BEB5"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/my_recycler_view"
+        android:layout_toEndOf="@+id/imageView2"
+        android:layout_alignTop="@+id/imageView1" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/message_smsicon"
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+
+
+
+</RelativeLayout>
+

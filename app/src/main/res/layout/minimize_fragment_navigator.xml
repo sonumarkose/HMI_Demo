@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingBottom="5dp">
+    >
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<!--        <ImageView
+            android:src="@drawable/ic_navigation"
+            android:id="@+id/navi_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="ContentDescription" />-->
+        <TextView
+
+            android:textColor="#45f4ce"
+            android:id="@+id/module_name_default"
+            android:text="@string/navi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:drawableLeft="@drawable/ic_navigation"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+
+</LinearLayout>

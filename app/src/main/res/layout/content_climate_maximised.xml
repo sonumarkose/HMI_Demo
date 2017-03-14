@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top_climate"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="550dp">
+
+        <fragment android:id="@+id/menu_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            class="com.example.quest.hmi_demo.climate.ClimateMenuFragment"/>
+
+        <fragment android:id="@+id/air_distribution_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/menu_fragment"
+            class="com.example.quest.hmi_demo.climate.ClimateAirDistributionFragment"/>
+
+        <fragment android:id="@+id/fan_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/air_distribution_fragment"
+            class="com.example.quest.hmi_demo.climate.ClimateFanFragment"/>
+
+    </RelativeLayout>
+</FrameLayout>

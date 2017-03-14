@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Media_Player</string>
+    <string name="label">HMI</string>
+    <string name="action_settings">Settings</string>
+    <string name="heading_air">Air Distribution Control</string>
+    <string name="Defrost">Defrost</string>
+    <string name="Ventilation">Ventilation</string>
+    <string name="Floor">Floor</string>
+    <string name="heading_fan">fan speed control</string>
+    <string name="climate">climate control</string>
+    <string name="google_maps_key" >AIzaSyDawlwsvR4mthz68pSrJDD_62cymtnFHZQ</string>
+    <string name="navi">Navigation</string>
+    <string name="navi_route">Route not defined</string>
+    <string name="current_location_not_set">Location not set</string>
+    <string name="current_location">Getting Current location....</string>
+    <string name="eta">ETA:Route not set</string>
+</resources>

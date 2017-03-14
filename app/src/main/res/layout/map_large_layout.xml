@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="400dp">
+    <RelativeLayout
+        android:id="@+id/map_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/bajrangbali"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <FrameLayout
+                android:id="@+id/map_large_container"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:backgroundTint="@color/cardview_light_background"
+            android:backgroundTintMode="multiply"
+            android:background="@color/wallet_dim_foreground_inverse_disabled_holo_dark"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+<!--                <ImageView
+                    android:src="@drawable/ic_navigation"
+                    android:id="@+id/navi_image_large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="ContentDescription" />-->
+                <TextView
+                    android:textColor="#45f4ce"
+                    android:id="@+id/module_name_default"
+                    android:text="@string/navi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:drawableLeft="@drawable/ic_navigation"
+                    android:gravity="center_vertical"
+
+
+
+
+                    android:textSize="20dp"
+
+                    android:layout_gravity="center" />
+            </LinearLayout>
+            <TextView
+                android:textColor="#45f4ce"
+                android:textSize="20dip"
+                android:id="@+id/current_location_large"
+                android:text="@string/current_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp" android:paddingRight="5dp"/>
+           <!-- <LinearLayout
+
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#45f4ce"
+                    android:textSize="20dip"
+                    android:id="@+id/eta"
+                    android:text="@string/eta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"/>
+                <TextView
+                    android:textColor="#45f4ce"
+                    android:textSize="20dip"
+                    android:id="@+id/route"
+                    android:text="@string/navi_route"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:textColor="#45f4ce"
+                android:textSize="20dip"
+                android:id="@+id/current_location_large"
+                android:text="@string/current_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />-->
+        </LinearLayout>
+    </RelativeLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="@dimen/fab_margin"
+        app:layout_anchor="@id/map_box"
+        app:layout_anchorGravity="bottom|left|start"
+        app:fabSize="normal"
+        android:src="@drawable/ic_keyboard_arrow_left" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:layout_anchor="@id/map_box"
+        app:layout_anchorGravity="bottom|right|end"
+        app:fabSize="normal"
+        android:src="@drawable/ic_zoom_out_map" />
+</android.support.design.widget.CoordinatorLayout>

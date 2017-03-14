@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/cardBackground"
+
+    app:cardUseCompatPadding="true"
+    card_view:cardElevation="3dp"
+    card_view:contentPadding="5dp"
+    >
+    <LinearLayout
+        android:id="@+id/directions_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:paddingBottom="10dp" android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:paddingRight="16dp"
+
+
+            android:textColor="#f6ecec"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:paddingRight="16dp"
+
+            android:textColor="@color/wallet_hint_foreground_holo_dark"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:paddingRight="16dp"
+
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="16sp" />
+
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

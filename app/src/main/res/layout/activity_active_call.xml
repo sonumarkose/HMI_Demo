@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimaryDark"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    >
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="#59596A"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:src="@drawable/contact"
+            android:id="@+id/contact_image"
+            android:layout_width="40dp"
+            android:layout_height="30dp">
+        </ImageView>
+        <TextView
+            android:id="@+id/ctName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/contact_image"
+            android:text="Number"
+            />
+        <TextView
+            android:id="@+id/ctCallDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_toRightOf="@+id/contact_image"
+            android:layout_below="@+id/ctName"
+            android:layout_marginRight="10dp"
+            android:text="ctCallDuration"
+            />
+
+
+
+        <ProgressBar
+            android:id="@+id/progressBarBattery"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ctCallDuration"
+
+            android:layout_gravity="center"
+            android:paddingTop="20dp"
+            android:minHeight="10dp"
+            android:minWidth="50dp" />
+        <TextView
+            android:id="@+id/ctCallStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/progressBarBattery"
+            android:text="ctCallStatus"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="300dp"
+        android:background="#EEEEF0">
+
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="40dp">
+
+        <Button android:id="@+id/Buttonkeypad"
+            android:text="Keypad"
+            android:layout_height="85dp"
+            android:layout_width="90dp"
+            />
+        <Button android:id="@+id/ButtonEnd"
+            android:text="End"
+            android:layout_height="85dp"
+            android:layout_width="90dp"/>
+
+        <Button android:id="@+id/ButtonAddCall"
+            android:text="AddCall"
+            android:layout_height="85dp"
+            android:layout_width="90dp"/>
+
+    </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="40dp">
+
+            <Button android:id="@+id/ButtonMute"
+                android:text="Mute"
+                android:layout_height="85dp"
+                android:layout_width="90dp"
+                />
+            <Button android:id="@+id/ButtonPrivate"
+                android:text="Private"
+                android:layout_height="85dp"
+                android:layout_width="90dp"/>
+
+           />
+
+        </TableRow>
+    </TableLayout>
+    </RelativeLayout>
+</LinearLayout>
+

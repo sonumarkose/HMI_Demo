@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EEEEF0">
+    <EditText android:id="@+id/EditTextPhoneNumber"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        />
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="40dp">
+
+        <Button android:id="@+id/Button01"
+            android:text="1"
+
+            android:layout_height="85dp"
+            android:layout_width="90dp"
+            />
+        <Button android:id="@+id/Button02"
+            android:text="2"
+
+            android:layout_height="85dp"
+            android:layout_width="90dp"/>
+        <Button android:id="@+id/Button03"
+            android:text="3"
+
+            android:layout_height="85dp"
+            android:layout_width="90dp"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="40dp">
+
+        <Button android:id="@+id/Button04"
+            android:text="4"
+
+            android:layout_height="85dp"
+            android:layout_width="90dp"
+            />
+        <Button android:id="@+id/Button05"
+            android:text="5"
+
+            android:layout_height="85dp"
+            android:layout_width="90dp"/>
+        <Button android:id="@+id/Button06"
+            android:text="6"
+            android:layout_height="85dp"
+            android:layout_width="90dp"/>
+
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="40dp">
+
+        <Button android:id="@+id/Button07"
+            android:text="7"
+
+            android:layout_height="85dp"
+            android:layout_width="90dp"
+            />
+        <Button android:id="@+id/Button08"
+            android:text="8"
+
+            android:layout_height="85dp"
+            android:layout_width="90dp"/>
+        <Button android:id="@+id/Button09"
+            android:text="9"
+            android:layout_height="85dp"
+            android:layout_width="90dp"/>
+
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="40dp">
+
+        <Button android:id="@+id/Buttonstar"
+            android:text="*"
+
+            android:layout_height="85dp"
+            android:layout_width="90dp"
+            />
+        <Button android:id="@+id/Button00"
+            android:text="0"
+
+            android:layout_height="85dp"
+            android:layout_width="90dp"/>
+        <Button android:id="@+id/Buttonhash"
+            android:text="#"
+
+            android:layout_height="85dp"
+            android:layout_width="90dp"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="40dp">
+
+        <Button
+            android:id="@+id/ButtonClose"
+            android:text="Close"
+
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            />
+
+        <ImageButton
+            android:id="@+id/ImageButtonDial"
+
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/call" />
+        <ImageButton
+            android:id="@+id/ImageButtonBack"
+
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/back" />
+    </TableRow>
+</TableLayout>
