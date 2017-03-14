@@ -58,13 +58,13 @@ public class NavigationLargeScreenFragment extends Fragment implements MainActiv
     MarkerOptions markerOptions;
     private Marker mCurrLocationMarker;
     FloatingActionButton fabMax, fabMin;
-    ilargeFragment communicator;
+    //ilargeFragment communicator;
     FragmentManager fm = null;
     NavigationFullScreenFragment navFullScrFragment;
     TextView currentLocation;
-    public void setCommunicator(ilargeFragment communicator){
+    /*public void setCommunicator(ilargeFragment communicator){
         this.communicator = communicator;
-    }
+    }*/
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -159,6 +159,7 @@ public class NavigationLargeScreenFragment extends Fragment implements MainActiv
     }
 
     public void setCurrentPosition(){
+        System.out.println("NavigationLargeScreenFragment.setCurrentPosition");
         if (mCurrLocationMarker != null) {
             mCurrLocationMarker.remove();
         }
@@ -265,10 +266,11 @@ public class NavigationLargeScreenFragment extends Fragment implements MainActiv
         transaction.commit();
     }
 
-    public interface ilargeFragment{
+  /*  public interface ilargeFragment{
         public void showFullScreen();
-    }
+    }*/
     public void showCurrentLocation(){
+        System.out.println("NavigationLargeScreenFragment.showCurrentLocation");
         Geocoder geocoder = new Geocoder(getActivity(), Locale.getDefault());
         List<Address> addresses = null;
         try {

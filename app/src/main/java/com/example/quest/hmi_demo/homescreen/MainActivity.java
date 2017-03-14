@@ -62,8 +62,8 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
         mapUtil = MapUtil.getInstance();
         mapUtil.setContext(this);
 
-        Fragment fragmenta = new MainActivityFragmentA();
-        Fragment fragmentb = new ClimateMinimisedFragment();
+/*        Fragment fragmenta = new MainActivityFragmentA();
+        Fragment fragmentb = new ClimateMinimisedFragment();*/
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnTouchListener(this);
 /*        fab.setOnClickListener(new View.OnClickListener() {
@@ -93,6 +93,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
 */
 
         if (useNavigationAllowed()){
+            mapUtil.buildGoogleApiClient();
             initializeModules();
         } else
         {
@@ -194,6 +195,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
         }
     }
     public void initializeModules(){
+        System.out.println("MainActivity.initializeModules");
         Fragment fragmenta = new MainActivityFragmentA();
         Fragment fragmentb = new ClimateMinimisedFragment();
 

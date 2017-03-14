@@ -65,7 +65,7 @@ public class FragmentNavigator extends Fragment implements MainActivityFragmentA
         currentCity = (TextView) view.findViewById(R.id.current_city_default);
         currentState = (TextView) view.findViewById(R.id.current_state_default);
         currentCountry = (TextView) view.findViewById(R.id.current_country_default);
-        navLargeScrFrag = new NavigationLargeScreenFragment();
+        //navLargeScrFrag = new NavigationLargeScreenFragment();
         //navLargeScrFrag.setCommunicator(this);
 
 
@@ -130,7 +130,10 @@ public class FragmentNavigator extends Fragment implements MainActivityFragmentA
 
     @Override
     public void notifyLocation() {
-        setDefaultView();
+        if(isVisible() && isResumed()){
+            setDefaultView();
+        }
+
 
     }
 
